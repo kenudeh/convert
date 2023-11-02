@@ -1,4 +1,4 @@
-
+import {BiSolidUser} from 'react-icons/bi';
 
 const Header = () => {
     return (
@@ -10,9 +10,11 @@ const Header = () => {
                 <li>About</li>
                 <li>Contact us</li>
             </ul>
-            <span>Icons</span>
+            <span>
+                <button><BiSolidUser />Login/Sign up</button>
+            </span>
         </main>
     );
 }
- 
+
 export default Header;

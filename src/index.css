@@ -26,7 +26,6 @@ code {
   flex-direction: column;
   flex-grow: 3;
   height: 100vh;
-  background-color: brown;
 }
 
 .App .Header{
@@ -53,7 +52,9 @@ code {
   display: flex;
   justify-content: space-between;
   min-height: 8vh;
-  background-color: yellow;
+  background-color: rgb(245, 245, 188);
+  position: fixed;
+  width: 100vw;
 }
 
 .Header p{
@@ -69,7 +70,7 @@ code {
   display: flex;
   justify-content: space-between;
   flex-grow: 4;
-  align-items: center;
+  align-items: center; 
 }
 
 .Header ul li{
@@ -89,22 +90,35 @@ code {
   flex-grow: 0.5;
   justify-content: center;
   align-items: center;
+  gap: 2vw;
+}
+
+.Header span button{
+  min-width: 5vw
 }
 
 
 /*********************************************LANDING***************************************************/
 .Herosection{
   display: flex;
-  min-height: 50vh;
+  min-height: 90vh;
+  background-color: rgb(1, 1, 36);
 }
+
+.Herosection .heroimage{
+  display: grid;
+  place-content: center;
+  width: 50%;
+}
+
+
 
 .Herosection .herotext{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-grow: 1;
-  background-color: green;
+  width: 50%;
 }
 
 .Herosection .herotext h2{
@@ -128,16 +142,222 @@ code {
 
 
 
-.Herosection .heroimage{
+/**************** FOOTER  ********************/
+.Footer{
+  display: flex;
+  flex-direction: column;
+  padding: 4vh;
+  color: white;
+  background-color: black;
+}
+
+.Footer .footer1{
+  display: flex;
+  justify-content: space-between;
+}
+
+.Footer .footer1 .logo{
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
   flex-grow: 1;
-  background-color: yellow;
 }
 
-.Howitworks{
-  min-height: 50vh;
+.Footer .footer1 .ourservices{
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  flex-grow: 1;
 }
 
-.Howitworks h3{
-  margin-top: 5vh;
-  font-size: 2rem;
+.Footer .footer1 .ourservices span{
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: aquamarine;
+}
+
+.Footer .footer1 .ourservices ul{
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  padding-top: 2vh;
+}
+
+.Footer .footer1 .ourservices ul li{
+  list-style: none;
+  padding-top: 0.9rem;
+}
+
+.Footer .footer1 .explore{
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  flex-grow: 1;
+}
+
+.Footer .footer1 .explore span{
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: aquamarine;
+}
+
+.Footer .footer1 .explore ul{
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  padding-top: 2vh;
+}
+
+.Footer .footer1 .explore ul li{
+  list-style: none;
+  padding-top: 0.9rem;
+}
+
+.Footer .footer1 .letstalk{
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  flex-grow: 0.5;
+}
+
+.Footer .footer1 .letstalk span{
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: aquamarine;
+}
+
+.Footer .footer1 .letstalk p{
+  padding-top: 2vh;
+  font-size: 1rem;
+}
+
+.Footer .footer1 .letstalk button{
+  width: 50%;
+  margin-top: 4vh;
+  height: 6vh;
+  background-color: aquamarine;
+  cursor: pointer;
+  border-radius: 5px;
+
+}
+
+
+.Footer .footer2{
+  display: flex;
+  padding-top: 8vh;
+  padding-bottom: 4vh;
+  color: white;
+}
+
+.Footer .footer2 .location{
+  display: flex;
+  align-items: center;
+  flex-grow: 0.5;
+}
+
+.Footer .footer2 .location .wrap{
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  gap: 0.25rem;
+}
+
+.Footer .footer2 .location .wrap span{
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.Footer .footer2 .location .wrap p{
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.Footer .footer2 .phone{
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.Footer .footer2 .phone .wrap{
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  gap: 0.25rem;
+}
+
+.Footer .footer2 .phone .wrap span{
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.Footer .footer2 .phone .wrap p{
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.Footer .footer2 .email{
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.Footer .footer2 .email .wrap{
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  gap: 0.25rem;
+}
+
+.Footer .footer2 .email .wrap span{
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.Footer .footer2 .email .wrap p{
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.Footer .footer2 .socialmedia{
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  flex-grow: 1;
+}
+
+.Footer .footer2 .socialmedia span{
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.Footer .footer2 .socialmedia .wrap{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+
+
+
+.Footer .footer3{
+  display: flex;
+  justify-content: space-between;
+  padding: 1vh;
+  margin-top: 1vh;
+  font-size: 0.8rem;
+  color: white;
+}
+
+.Footer .footer3 p{
+  display: flex;
+  flex-grow: 2;
+  align-items: center;
+  justify-content: baseline;
+}
+
+.Footer .footer3 .privacy{
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
 }
