@@ -1,18 +1,24 @@
 import image from '../Images/standing.jpg';
+import React from "react";
+import EmailForm from "./EmailForm"
 
 
 const Landing = () =>{
 	return(
 		<main>
-			<section className="Herosection">
-				<section className="herotext">
-					<h2>Convert airtime to cash in minutes...</h2>
-					<p>We'll buy your excess airtime at the best rate.</p>
-					<p>Be it <span style={{backgroundColor:"yellow", padding:"0.5vh", borderRadius:"5px"}}>MTN</span>, <span style={{backgroundColor:"red", padding:"0.5vh", borderRadius:"5px"}}>Airtel</span>, or <span style={{backgroundColor:"green", padding:"0.5vh", borderRadius:"5px"}}>Glo</span>! </p>
-					<button><span style={{fontSize:"1.1rem"}}>Get started</span></button>
-				</section>
-				<section className="heroimage" style={{backgroundImage: `url(${image})`, backgroundRepeat: "no-repeat", 	backgroundSize: "cover", backgroundPosition: "center", padding:"5rem" }}>
-				</section>
+			<section className="Hero">
+				<div className="Hero-content">
+					<h1 className="Hero-heading">Convert airtime to cash in minutes!</h1>
+					<p className="Hero-subheading">We'll buy your excess airtime at the best rate. Be it <span style={{backgroundColor:"yellow", padding:"0.5vh", borderRadius:"5px"}}>MTN</span>, <span style={{backgroundColor:"red", padding:"0.5vh", borderRadius:"5px"}}>Airtel</span>, or <span style={{backgroundColor:"green", padding:"0.5vh", borderRadius:"5px"}}>Glo</span>! </p>
+					<button className="cta-button"><span style={{fontSize:"1.1rem"}}>Get started</span></button>
+				</div>								
+			</section>
+
+			<section className="Emailfield">
+				<div>
+					<p>Enter your email below to get notified when we launch!</p>
+					<EmailForm />
+				</div>
 			</section>
 			
 			<section className="Howitworks">

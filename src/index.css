@@ -99,47 +99,134 @@ code {
 
 
 /*********************************************LANDING***************************************************/
-.Herosection{
+.Hero{
   display: flex;
-  min-height: 90vh;
-  background-color: rgb(1, 1, 36);
-}
-
-.Herosection .heroimage{
-  display: grid;
-  place-content: center;
-  width: 50%;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh; /* Since the navbar is 10vh, we'll use 90vh for the Hero content */
+  padding: 0 20px; /* Optional padding for responsiveness */
+  text-align: center;
 }
 
 
-
-.Herosection .herotext{
+/*
+.Hero-backup{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 50%;
+  min-height: 100vh;
+  background-color: white;
+  padding-top: 30px;
+}
+*/
+
+.Hero-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem; /* Space between elements */
+  }
+
+
+.Hero-heading{
+  font-size: 3rem; /* Adjust as needed */
+  font-weight: bold;
+}
+.Hero-subheading .p{
+  font-size: 1.25rem; /* Adjust as needed */
+  color: #555; /* Lighter color for subheading */
 }
 
-.Herosection .herotext h2{
-  font-size: 2.5rem;
-  margin-bottom: 3vh;
-}
-.Herosection .herotext p{
-  font-size: 1.5rem;
-  
-}
-
-
-
-.Herosection .herotext button{
-  margin-top: 5vh;
-  min-width: 20vw;
-  min-height: 7vh;
-  border-radius: 10px;
-  cursor: pointer;
+.cta-button{
+  padding: 1rem 2rem;
+  background-color: #007BFF; /* CTA button color */
+  color: white;
+  font-size: 1rem;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
 }
 
+.cta-button:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
+
+
+/* Media Queries */ 
+/*Mobile Devices (Portrait) */
+@media (max-width: 767px) {
+  .hero-heading {
+    font-size: 2.25rem; /* Slightly smaller font size for mobile */
+  }
+
+  .hero-subheading {
+    font-size: 1rem; /* Reduce font size to fit mobile screens */
+  }
+
+  .cta-button {
+    padding: 0.75rem 1.5rem;
+    font-size: 0.875rem; /* Slightly smaller CTA text */
+  }
+}
+
+/* Tablets (Portrait) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .hero-heading {
+    font-size: 2.75rem; /* Adjust for tablet screens */
+  }
+
+  .hero-subheading {
+    font-size: 1.125rem;
+  }
+
+  .cta-button {
+    padding: 0.75rem 1.75rem;
+    font-size: 0.95rem;
+  }
+}
+
+/* Tablets (Landscape) & Small Laptops */
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .hero-heading {
+    font-size: 3rem; /* Similar to desktop but adjusted for smaller screens */
+  }
+
+  .hero-subheading {
+    font-size: 1.25rem;
+  }
+
+  .cta-button {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+  }
+}
+
+/* Laptops & Desktops */
+@media (min-width: 1280px) {
+  .hero-heading {
+    font-size: 3.5rem; /* Larger font size for wide screens */
+  }
+
+  .hero-subheading {
+    font-size: 1.5rem; /* Larger subheading for better visual hierarchy */
+  }
+
+  .cta-button {
+    padding: 1rem 2.5rem;
+    font-size: 1.125rem;
+  }
+}
+
+
+
+/********EmailField  **********/
+
+.Emailfield{
+  background-color: magenta;
+  min-height: 50vh;
+}
 
 
 /**************** FOOTER  ********************/
