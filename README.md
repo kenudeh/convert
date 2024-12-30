@@ -1,6 +1,6 @@
 # CovertNG
 
-ConvertNG is a web-based application for trading airtime in Nigeria.
+ConvertNG is a web application for converting airtime to cash in Nigeria.
 
 ## Features
 Details coming soon.
