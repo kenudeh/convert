@@ -1,0 +1,134 @@
+/*********************************************LANDING***************************************************/
+.Landing{
+    margin-top: 70px;
+  }
+  
+  .Hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh; /* Since the navbar is 10vh, we'll use 90vh for the Hero content */
+    padding: 0 20px; /* Optional padding for responsiveness */
+    text-align: center;
+    background: linear-gradient(135deg, #d2b48c, aquamarine);
+
+  }
+
+  .Landing .Hero .Coming-soon img {
+    max-height: 200px; /* Set a max height for the logo */
+    height: auto; /* Maintain the aspect ratio */
+    width: auto; /* Optionally, set the width to auto as well */
+    object-fit: contain; /* Prevent stretching/distortion */
+    border-radius: 20px;
+  }
+  
+  .Hero-content{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem; /* Space between elements */
+    }
+  
+  
+  .Hero-heading{
+    font-size: 3rem; /* Adjust as needed */
+    font-weight: bold;
+  }
+  .Hero-subheading .p{
+    font-size: 1.25rem; /* Adjust as needed */
+    color: #555; /* Lighter color for subheading */
+  }
+  
+  .cta-button{
+    padding: 1rem 2rem;
+    background-color: #007BFF; /* CTA button color */
+    color: white;
+    font-size: 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+  }
+
+  
+  /* Media Queries */ 
+  /*Mobile Devices (Portrait) */
+  @media (max-width: 767px) {
+
+    .Hero{
+      margin-top: -10vh;
+    }
+
+    .Hero-heading {
+      font-size: 2.25rem; /* Slightly smaller font size for mobile */
+    }
+  
+    .Hero-subheading {
+      font-size: 1rem; /* Reduce font size to fit mobile screens */
+    }
+  
+    .cta-button {
+      padding: 0.75rem 1.5rem;
+      font-size: 0.875rem; /* Slightly smaller CTA text */
+    }
+  }
+  
+  /* Tablets (Portrait) */
+  @media (min-width: 768px) and (max-width: 1023px) {
+    
+    
+    .Hero-heading {
+      font-size: 2.75rem; /* Adjust for tablet screens */
+    }
+  
+    .Hero-subheading {
+      font-size: 1.125rem;
+    }
+  
+    .cta-button {
+      padding: 0.75rem 1.75rem;
+      font-size: 0.95rem;
+    }
+  }
+  
+  /* Tablets (Landscape) & Small Laptops */
+  @media (min-width: 1024px) and (max-width: 1279px) {
+  
+
+    .Hero-heading {
+      font-size: 3rem; /* Similar to desktop but adjusted for smaller screens */
+    }
+  
+    .Hero-subheading {
+      font-size: 1.25rem;
+    }
+  
+    .cta-button {
+      padding: 1rem 2rem;
+      font-size: 1rem;
+    }
+  }
+  
+  /* Laptops & Desktops */
+  @media (min-width: 1280px) {
+    
+    .Hero-heading {
+      font-size: 3.5rem; /* Larger font size for wide screens */
+    }
+  
+    .Hero-subheading {
+      font-size: 1.5rem; /* Larger subheading for better visual hierarchy */
+    }
+  
+    .cta-button {
+      padding: 1rem 2.5rem;
+      font-size: 1.125rem;
+    }
+  }
+  
+  

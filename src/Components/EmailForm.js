@@ -32,7 +32,8 @@ const EmailForm = ()=> {
     };
 
     return(
-        <div>
+        <div className="Form">
+            <p>Enter your email below to get notified when we launch, and enjoy earlybird benefits</p>
             <form onSubmit={handleSubmit}>
                 <input
                     type="email"
@@ -40,6 +41,7 @@ const EmailForm = ()=> {
                     onChange={(e) => setEmail(e.target.value)}
                     placeholder="Enter your email"
                     required
+                    className="Input"
                 />
                 <button type="submit">Submit</button>
             </form>

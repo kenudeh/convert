@@ -1,4 +1,4 @@
-import Landing from './Components/Landing';
+import Landing from './Components/Hero/Landing';
 
 
 const Content = () => {

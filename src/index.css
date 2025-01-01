@@ -47,404 +47,61 @@ code {
 
 
 
-/************************************************HEADER****************************************************/
-.Header{
-  display: flex;
-  justify-content: space-between;
-  min-height: 8vh;
-  background-color: rgb(245, 245, 188);
-  position: fixed;
-  width: 100vw;
-}
-
-.Header p{
-  display: flex;
-  flex-grow: 0.5;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-}
-
-.Header ul{
-  background-color: red;
-  display: flex;
-  justify-content: space-between;
-  flex-grow: 4;
-  align-items: center; 
-}
-
-.Header ul li{
-  list-style-type: none;
-  padding-left: 2vw;
-  padding-right: 2vw;
-  cursor: pointer;
-}
-
-.Header ul li:hover{
-  background-color: bisque;
-}
-
-
-.Header span{
-  display: flex;
-  flex-grow: 0.5;
-  justify-content: center;
-  align-items: center;
-  gap: 2vw;
-}
-
-.Header span button{
-  min-width: 5vw
-}
-
-
-/*********************************************LANDING***************************************************/
-.Hero{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 90vh; /* Since the navbar is 10vh, we'll use 90vh for the Hero content */
-  padding: 0 20px; /* Optional padding for responsiveness */
-  text-align: center;
-}
-
-
-/*
-.Hero-backup{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  background-color: white;
-  padding-top: 30px;
-}
-*/
-
-.Hero-content{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem; /* Space between elements */
-  }
-
-
-.Hero-heading{
-  font-size: 3rem; /* Adjust as needed */
-  font-weight: bold;
-}
-.Hero-subheading .p{
-  font-size: 1.25rem; /* Adjust as needed */
-  color: #555; /* Lighter color for subheading */
-}
-
-.cta-button{
-  padding: 1rem 2rem;
-  background-color: #007BFF; /* CTA button color */
-  color: white;
-  font-size: 1rem;
-  text-decoration: none;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
-}
-
-.cta-button:hover {
-  background-color: #0056b3; /* Darker shade on hover */
-}
-
-
-/* Media Queries */ 
-/*Mobile Devices (Portrait) */
-@media (max-width: 767px) {
-  .hero-heading {
-    font-size: 2.25rem; /* Slightly smaller font size for mobile */
-  }
-
-  .hero-subheading {
-    font-size: 1rem; /* Reduce font size to fit mobile screens */
-  }
-
-  .cta-button {
-    padding: 0.75rem 1.5rem;
-    font-size: 0.875rem; /* Slightly smaller CTA text */
-  }
-}
-
-/* Tablets (Portrait) */
-@media (min-width: 768px) and (max-width: 1023px) {
-  .hero-heading {
-    font-size: 2.75rem; /* Adjust for tablet screens */
-  }
-
-  .hero-subheading {
-    font-size: 1.125rem;
-  }
-
-  .cta-button {
-    padding: 0.75rem 1.75rem;
-    font-size: 0.95rem;
-  }
-}
-
-/* Tablets (Landscape) & Small Laptops */
-@media (min-width: 1024px) and (max-width: 1279px) {
-  .hero-heading {
-    font-size: 3rem; /* Similar to desktop but adjusted for smaller screens */
-  }
-
-  .hero-subheading {
-    font-size: 1.25rem;
-  }
-
-  .cta-button {
-    padding: 1rem 2rem;
-    font-size: 1rem;
-  }
-}
-
-/* Laptops & Desktops */
-@media (min-width: 1280px) {
-  .hero-heading {
-    font-size: 3.5rem; /* Larger font size for wide screens */
-  }
-
-  .hero-subheading {
-    font-size: 1.5rem; /* Larger subheading for better visual hierarchy */
-  }
-
-  .cta-button {
-    padding: 1rem 2.5rem;
-    font-size: 1.125rem;
-  }
-}
-
-
 
 /********EmailField  **********/
 
-.Emailfield{
-  background-color: magenta;
-  min-height: 50vh;
+.Emailfield {
+  height: 40vh;
+  background: #f9f9f9; /* Light gray or off-white */
 }
 
+.Form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  height: 30vh;
+}
 
-/**************** FOOTER  ********************/
-.Footer{
+.Input{
   display: flex;
   flex-direction: column;
-  padding: 4vh;
-  color: white;
-  background-color: black;
-}
-
-.Footer .footer1{
-  display: flex;
-  justify-content: space-between;
-}
-
-.Footer .footer1 .logo{
-  display: flex;
-  flex-direction: column;
-  align-items: baseline;
-  flex-grow: 1;
-}
-
-.Footer .footer1 .ourservices{
-  display: flex;
-  flex-direction: column;
-  align-items: baseline;
-  flex-grow: 1;
-}
-
-.Footer .footer1 .ourservices span{
-  font-size: 1.2rem;
-  font-weight: bold;
-  color: aquamarine;
-}
-
-.Footer .footer1 .ourservices ul{
-  display: flex;
-  flex-direction: column;
-  align-items: baseline;
-  padding-top: 2vh;
-}
-
-.Footer .footer1 .ourservices ul li{
-  list-style: none;
-  padding-top: 0.9rem;
-}
-
-.Footer .footer1 .explore{
-  display: flex;
-  flex-direction: column;
-  align-items: baseline;
-  flex-grow: 1;
-}
-
-.Footer .footer1 .explore span{
-  font-size: 1.2rem;
-  font-weight: bold;
-  color: aquamarine;
-}
-
-.Footer .footer1 .explore ul{
-  display: flex;
-  flex-direction: column;
-  align-items: baseline;
-  padding-top: 2vh;
-}
-
-.Footer .footer1 .explore ul li{
-  list-style: none;
-  padding-top: 0.9rem;
-}
-
-.Footer .footer1 .letstalk{
-  display: flex;
-  flex-direction: column;
-  align-items: baseline;
-  flex-grow: 0.5;
-}
-
-.Footer .footer1 .letstalk span{
-  font-size: 1.2rem;
-  font-weight: bold;
-  color: aquamarine;
-}
-
-.Footer .footer1 .letstalk p{
-  padding-top: 2vh;
-  font-size: 1rem;
-}
-
-.Footer .footer1 .letstalk button{
-  width: 50%;
-  margin-top: 4vh;
-  height: 6vh;
-  background-color: aquamarine;
-  cursor: pointer;
+  height: 2rem;
+  width: 20rem;
+  border: 1px solid black;
   border-radius: 5px;
+}
 
+.Form p{
+  font-family: 'Roboto', sans-serif; /* Replace with your preferred font */
+  font-weight: 500; /* Medium weight for subtle emphasis */
+  font-style: italic; /* Adds a professional touch */
+  color: #333; /* Neutral dark color for readability */
+  font-size: 1rem; /* Adjust based on your design */
+  text-align: center;
+}
+
+.Form button{
+  padding: 0.5rem 1rem;
+    border: 1px solid #7FFFD4; /* Acquamarine border */
+    /* Acquamarine text color */
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 2rem;
+
+    background-color: transparent; /* Acquamarine background on hover */
+    color: #66CDAA;
+    border-color: #66CDAA; 
 }
 
 
-.Footer .footer2{
-  display: flex;
-  padding-top: 8vh;
-  padding-bottom: 4vh;
+.Form button:hover{
+  background-color: #7FFFD4;
   color: white;
+  border-color: #66CDAA; 
 }
 
-.Footer .footer2 .location{
-  display: flex;
-  align-items: center;
-  flex-grow: 0.5;
-}
-
-.Footer .footer2 .location .wrap{
-  display: flex;
-  flex-direction: column;
-  align-items: baseline;
-  gap: 0.25rem;
-}
-
-.Footer .footer2 .location .wrap span{
-  font-weight: bold;
-  font-size: 1rem;
-}
-
-.Footer .footer2 .location .wrap p{
-  font-size: 0.8rem;
-  font-weight: bold;
-}
-
-.Footer .footer2 .phone{
-  display: flex;
-  align-items: center;
-  flex-grow: 1;
-}
-
-.Footer .footer2 .phone .wrap{
-  display: flex;
-  flex-direction: column;
-  align-items: baseline;
-  gap: 0.25rem;
-}
-
-.Footer .footer2 .phone .wrap span{
-  font-weight: bold;
-  font-size: 1rem;
-}
-
-.Footer .footer2 .phone .wrap p{
-  font-size: 0.8rem;
-  font-weight: bold;
-}
-
-.Footer .footer2 .email{
-  display: flex;
-  align-items: center;
-  flex-grow: 1;
-}
-
-.Footer .footer2 .email .wrap{
-  display: flex;
-  flex-direction: column;
-  align-items: baseline;
-  gap: 0.25rem;
-}
-
-.Footer .footer2 .email .wrap span{
-  font-weight: bold;
-  font-size: 1rem;
-}
-
-.Footer .footer2 .email .wrap p{
-  font-size: 0.8rem;
-  font-weight: bold;
-}
-
-.Footer .footer2 .socialmedia{
-  display: flex;
-  flex-direction: column;
-  align-items: baseline;
-  flex-grow: 1;
-}
-
-.Footer .footer2 .socialmedia span{
-  font-weight: bold;
-  font-size: 1rem;
-}
-
-.Footer .footer2 .socialmedia .wrap{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 1.5rem;
-}
-
-
-
-
-.Footer .footer3{
-  display: flex;
-  justify-content: space-between;
-  padding: 1vh;
-  margin-top: 1vh;
-  font-size: 0.8rem;
-  color: white;
-}
-
-.Footer .footer3 p{
-  display: flex;
-  flex-grow: 2;
-  align-items: center;
-  justify-content: baseline;
-}
-
-.Footer .footer3 .privacy{
-  display: flex;
-  justify-content: space-between;
-  flex-grow: 1;
-}

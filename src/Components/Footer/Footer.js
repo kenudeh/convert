@@ -5,15 +5,16 @@ import {BiLogoFacebook} from 'react-icons/bi';
 import {BiLogoTwitter} from 'react-icons/bi';
 import {BiLogoTelegram} from 'react-icons/bi';
 import {BiLogoTiktok} from 'react-icons/bi';
-
+import logo from '../../Images/logo.png';
+import './Footer.css';
 
 const Footer = () => {
     return (
         <main className="Footer">
             <section className='footer1'>
                 <section className='logo'>
-                    <p>Logo and description</p>
-                    <p>Seamless airtime transfer</p>
+                    <img src={logo} alt='brand logo'/>
+                    <p>Seamless Transfers</p>
                 </section>
                 <section className='ourservices'>
                     <p><span>Our Services</span></p>
@@ -77,11 +78,11 @@ const Footer = () => {
             </section>
             <hr/>
             <section className='footer3'>
-                <p>copyright &copy; 2023 IdeasRocket</p>
                 <div className='privacy'>
                     <p>Privacy Policy</p>
                     <p>Terms of Service</p>
                 </div>
+                <p>copyright &copy; 2025 IdeasRocket</p>
             </section>
         </main>
     )
